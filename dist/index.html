@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Our CRM</title>
+		<!-- fonts by Google -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
+		<!-- My styles.css -->
+		<link rel="stylesheet" href="./vendor/css/vendor.css">
+		<link rel="stylesheet" href="./css/app.css">
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="container-fluid homepeage">
+			<header class="row hidden-xs">
+				<div class="leftside-header col-md-2 col-sm-2">
+					<p>MENU</p>
+					<button id="header-menu-btn">
+						<i class="fa fa-bars" aria-hidden="true"></i>
+					</button>
+				</div>
+				<div class="header-search col-md-7 col-sm-7">
+					<form class="form-header-search">
+						<label for="search-input">
+							<i class="fa fa-filter" aria-hidden="true"></i>
+						</label>
+						<input type="text" id="search-input" placeholder="Placeholder text...">
+						<button id="search-button">
+							<i class="fa fa-search" aria-hidden="true"></i>
+							Search
+						</button>
+					</form>
+					
+					<ul class="ul-header-social">
+						<li><p>+ Add Contact</p></li>
+						<li><p>|</p></li>
+						<li><i class="fa fa-users" aria-hidden="true"></i></li>
+						<li><i class="fa fa-comment" aria-hidden="true"></i></li>
+						<li><i class="fa fa-bell" aria-hidden="true"></i></li>
+					</ul>
+				</div>
+				<div class="rightside-header col-md-3 col-sm-3">
+					<img src="assets/images/user photo.jpg" alt="user photo" class="img-circle">
+					<p>Elon Musk</p>
+					<p>|</p>
+					<i class="fa fa-sign-out" aria-hidden="true"></i>
+				</div>
+			</header>
+			<!-- header for mobile view -->
+			<header class="header2 row">
+				<div class="leftside-header col-xs-12">
+					<p>MENU MOB</p>
+					<button id="header2-menu-btn">
+						<i class="fa fa-bars" aria-hidden="true"></i>
+					</button>
+					<button>
+						<i class="fa fa-sign-out" aria-hidden="true"></i>
+					</button>
+				</div>
+			</header>
+			<section class="cnt row resize">
+			<!-- leftside menu -->
+				<div class="leftside-menu col-md-2 col-sm-2 col-xs-12 " id="menu-slide-effect">
+					<div id="accordion">
+						<h3>Profile</h3>
+						<div>
+							<ul id="menu">
+								<li>
+									<div><img src="assets/images/user photo.jpg" alt="user photo" class="img-circle img-circle2"></div>
+									<span>Elon Musk</span>
+								</li>
+								<li>
+									<div><i class="fa fa-pencil-alt" aria-hidden="true"></i></div>
+									<span>Profile</span>
+								</li>
+								<li>
+									<div><i class="fa fa-lock" aria-hidden="true"></i></div>
+									<span>Privacy</span>
+								</li>
+								<li>
+									<div><i class="fa fa-folder" aria-hidden="true"></i></div>
+									<span>Portfolio</span>
+								</li>
+								<li>
+									<div><i class="fa fa-cog" aria-hidden="true"></i></div>
+									<span>Settings</span>
+								</li>
+							</ul>
+						</div>
+						<h3>Main</h3>
+						<div>
+							<ul id="menu">
+								<li>
+									<div><img src="assets/images/user photo.jpg" alt="user photo" class="img-circle img-circle2"></div>
+									<span>Elon Musk</span>
+								</li>
+								<li>
+									<div><i class="fa fa-pencil-alt" aria-hidden="true"></i></div>
+									<span>Profile</span>
+								</li>
+								<li>
+									<div><i class="fa fa-lock" aria-hidden="true"></i></div>
+									<span>Privacy</span>
+								</li>
+								<li>
+									<div><i class="fa fa-folder" aria-hidden="true"></i></div>
+									<span>Portfolio</span>
+								</li>
+								<li>
+									<div><i class="fa fa-cog" aria-hidden="true"></i></div>
+									<span>Settings</span>
+								</li>
+							</ul>
+						</div>
+						<h3>Tools</h3>
+						<div>
+							<ul id="menu">
+								<li>
+									<div><img src="assets/images/user photo.jpg" alt="user photo" class="img-circle img-circle2"></div>
+									<span>Elon Musk</span>
+								</li>
+								<li>
+									<div><i class="fa fa-pencil-alt" aria-hidden="true"></i></div>
+									<span>Profile</span>
+								</li>
+								<li>
+									<div><i class="fa fa-lock" aria-hidden="true"></i></div>
+									<span>Privacy</span>
+								</li>
+								<li>
+									<div><i class="fa fa-folder" aria-hidden="true"></i></div>
+									<span>Portfolio</span>
+								</li>
+								<li>
+									<div><i class="fa fa-cog" aria-hidden="true"></i></div>
+									<span>Settings</span>
+								</li>
+							</ul>
+						</div>
+						<h3>Info</h3>
+						<div>
+							<ul id="menu">
+								<li>
+									<div><img src="assets/images/user photo.jpg" alt="user photo" class="img-circle img-circle2"></div>
+									<span>Elon Musk</span>
+								</li>
+								<li>
+									<div><i class="fa fa-pencil-alt" aria-hidden="true"></i></div>
+									<span>Profile</span>
+								</li>
+								<li>
+									<div><i class="fa fa-lock" aria-hidden="true"></i></div>
+									<span>Privacy</span>
+								</li>
+								<li>
+									<div><i class="fa fa-folder" aria-hidden="true"></i></div>
+									<span>Portfolio</span>
+								</li>
+								<li>
+									<div><i class="fa fa-cog" aria-hidden="true"></i></div>
+									<span>Settings</span>
+								</li>
+							</ul>
+						</div>
+						<h3>Channels</h3>
+						<div>
+							<ul id="menu">
+								<li>
+									<div><img src="assets/images/user photo.jpg" alt="user photo" class="img-circle img-circle2"></div>
+									<span>Elon Musk</span>
+								</li>
+								<li>
+									<div><i class="fa fa-pencil-alt" aria-hidden="true"></i></div>
+									<span>Profile</span>
+								</li>
+								<li>
+									<div><i class="fa fa-lock" aria-hidden="true"></i></div>
+									<span>Privacy</span>
+								</li>
+								<li>
+									<div><i class="fa fa-folder" aria-hidden="true"></i></div>
+									<span>Portfolio</span>
+								</li>
+								<li>
+									<div><i class="fa fa-cog" aria-hidden="true"></i></div>
+									<span>Settings</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="indicators">
+						<ul>
+							<li><div class="indicator-1"></div><p>Work</p></li>
+							<li><div class="indicator-2"></div><p>Looking for contact</p></li>
+							<li><div class="indicator-3"></div><p>looking for something</p></li>
+							<li><div class="indicator-4"></div><p>Search</p></li>
+							<li><div class="indicator-5"></div><p>Something darkside</p></li>
+						</ul>
+					</div>
+				</div>
+			<!-- News and Timeline feed -->
+				<div class="main-feed col-md-7 col-sm-10 col-xs-12">
+				<!-- <div class="container"> -->
+				<!-- <div class="row"> -->
+					<div class="newsfeed col-md-4 col-xs-12">
+						<p class="main-feed_title">News</p>
+						<ul id="sortable1">
+							<li class="ui-state-default">
+								<div class="panel">
+									<div class="panel-body">
+										<div class="news-body">
+											<img src="assets/images/news-1.jpg" class="img-circle">
+											<div>
+												<p>Mobile payments product design case study. What I learned.</p>
+											</div>
+										</div>
+										<div class="news-footer">
+											<time>10:32AM</time>
+											<a href="#">READ></a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="ui-state-default">
+								<div class="panel">
+									<div class="panel-body">
+										<div class="news-body">
+											<img src="assets/images/news-2.jpg" class="img-circle">
+											<div>
+												<p>How to use Adobe CC shared libraries and make the most of it?</p>
+											</div>
+										</div>
+										<div class="news-footer">
+											<time>4:33AM</time>
+											<a href="#">READ></a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="ui-state-default">
+								<div class="panel">
+									<div class="panel-body">
+										<div class="news-body">
+											<img src="assets/images/news-3.jpg" class="img-circle">
+											<div>
+												<p>8 Non-Digital Tools to Add to Your UX Toolbelt.</p>
+											</div>
+										</div>
+										<div class="news-footer">
+											<time>Yesterday</time>
+											<a href="#">READ></a>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="timeline col-md-7 col-xs-12">
+						<p class="main-feed_title">Timeline</p>
+						<ul id="sortable2">
+							<li class="ui-state-default">
+								<div class="panel new-post">
+									<div class="panel-body">
+										<form>
+											<img src="assets/images/user photo.jpg" alt="user photo" class="img-circle">
+											<input type="text" placeholder="Write something ...">
+											<button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+											<button type="submit" class="btn"><i class="fa fa-plus" aria-hidden="true"></i></button>
+										</form>
+									</div>
+									<div class="panel-footer">
+										<div class="filter">
+											<ul>
+												<li><span class="filter-bar-font">filter:</span></li>
+												<li>
+													<input type="checkbox" id="circle-home" checked="">
+													<label for="circle-home"><i class="fa fa-home" aria-hidden="true"></i></label>
+												</li>
+												<li>
+													<input type="checkbox" id="circle-user">
+													<label for="circle-user"><i class="fa fa-user" aria-hidden="true"></i></label>
+												</li>
+												<li>
+													<input type="checkbox" id="circle-book" checked="">
+													<label for="circle-book"><i class="fa fa-book" aria-hidden="true"></i></label>
+												</li>
+												<li>
+													<input type="checkbox" id="circle-music">
+													<label for="circle-music"><i class="fa fa-music" aria-hidden="true"></i></label>
+												</li>
+												<li>
+													<input type="checkbox" id="circle-bus">
+													<label for="circle-bus"><i class="fa fa-bus" aria-hidden="true"></i></label>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="ui-state-default">
+								<div class="chart panel">
+									<div class="panel-body">
+										<img src="assets/images/android.jpg" class="img-circle">
+										<p class="quantity">8374</p>
+										<p>You rank in the top 8% for profile views among your connections. #136 out of 1,689. Increased 18% in the last 30 days.</p>
+										<img src="assets/images/chart.jpg" class="img-chart">
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				<!-- </div> -->
+				<!-- </div> -->
+				</div>
+			<!-- Rightside menu -->
+				<div class="rightside-menu col-md-3 hidden-sm hidden-xs">
+					<div class="rightside-menu-part rightside-menu-part-1">
+						<div class="rightside-menu-progress">
+							<!-- <div class="progress-radial progress-75">
+								<div class="overlay">75%</div>
+							</div> -->
+							<div class="progress-bar1"></div>
+						</div>
+						<p>Answer more questions to complete your profile and become a SuperStar!</p>
+						<a href="">Complete profile <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+					</div>
+					<div class="rightside-menu-part rightside-menu-part-2">
+						<article>
+							<header>
+								<p>Friend request (2)</p>
+								<p>...</p>
+							</header>
+							<div class="article-body friend-request">
+								<img src="assets/images/user photo2.jpg" class="img-circle">
+								<div>
+									<p>John Smith</p>
+									<a href="#">Confirm friend </a><span>+</span>
+								</div>
+							</div>
+							<div class="article-body friend-request">
+								<img src="assets/images/user photo1.jpg" class="img-circle">
+								<div>
+									<p>Brynna Spencer</p>
+									<a href="#">Confirm friend </a><span>+</span>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div class="rightside-menu-part rightside-menu-part-3">
+						<article>
+							<header>
+								<p>Upcoming (23)</p>
+								<p>...</p>
+							</header>
+							<div class="article-body event">
+								<img src="assets/images/event-1.jpg" class="rectangle">
+								<div>
+									<p><b>EXIT Festival</b><br>
+									Petrovaradin, Novi Sad, Serbia</p>
+									<a href="#">Going </a><span>+</span>
+								</div>
+							</div>
+							<div class="article-body event">
+								<img src="assets/images/event-2.jpg" class="rectangle">
+								<div>
+									<p><b>Sziget Festival</b><br>
+									Sziget, Budapest, Hungary</p>
+									<a href="#">Going </a><span>+</span>
+								</div>
+							</div>
+							<div class="article-body event">
+								<img src="assets/images/event-3.jpg" class="rectangle">
+								<div>
+									<p><b>Disciplin A Kitschme</b><br>
+									Barutana, Belgrade, Serbia</p>
+									<a href="#">Going </a><span>+</span>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div class="rightside-menu-part rightside-menu-part-4">
+						<article>
+							<header>
+								<p>Private invitations (1)</p>
+								<p>...</p>
+							</header>
+							<div class="article-body private-invitations">
+								<img src="assets/images/user photo3.jpg" class="img-circle">
+								<div>
+									<p>Jovana Gajic • invited you to<br>
+									<b>Solving the dinner dilemma</b><br>
+									Yummly, San Francisco, CA</p>
+									<a href="#">Going </a><span>+</span><br>
+									<br>
+									<time>10 Nov at 12:12PM</time>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+		</div>
+
+
+		<script src="./vendor/js/vendor.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>
+
+<!-- Задание
+    макет на следующий раз
+    срок до среды 29/03
+	https://adobe.ly/2mIJhAu
+	иконки - аналогичные в font awesome
+	картинки - на ваш выбор из интернета
+	шрифты - можно посмотреть в инспекторе по ссылке
+	цвета - там же
+	макет - должен быть адаптивным (нужно продумать отображение на разных устройствах)
+	для сетки и элементов - можно бутстрап
+
+	будет плюсом - заюзать эффекты через джс
+
+
+-->

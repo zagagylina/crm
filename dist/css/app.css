@@ -1,0 +1,539 @@
+/**
+ * Global Reset of all HTML Elements
+ *
+ * Resetting all of our HTML Elements ensures a smoother
+ * visual transition between browsers. If you don't believe me,
+ * try temporarily commenting out this block of code, then go
+ * and look at Mozilla versus Safari, both good browsers with
+ * a good implementation of CSS. The thing is, all browser CSS
+ * defaults are different and at the end of the day if visual
+ * consistency is what we're shooting for, then we need to
+ * make sure we're resetting all spacing elements.
+ *
+ */
+html,
+body {
+  border: 0;
+  font-family: "Helvetica-Neue", "Helvetica", Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+div,
+span,
+object,
+iframe,
+img,
+table,
+caption,
+thead,
+tbody,
+tfoot,
+tr,
+tr,
+td,
+article,
+aside,
+canvas,
+details,
+figure,
+hgroup,
+menu,
+nav,
+footer,
+header,
+section,
+summary,
+mark,
+audio,
+video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cit,
+code,
+del,
+dfn,
+em,
+ins,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+b,
+i,
+hr,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+legend,
+label {
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+canvas,
+figure,
+figure img,
+figcaption,
+hgroup,
+footer,
+header,
+nav,
+section,
+audio,
+video {
+  display: block;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+table caption,
+table th,
+table td {
+  text-align: left;
+  vertical-align: middle;
+}
+a img {
+  border: 0;
+}
+:focus {
+  outline: 0;
+}
+body {
+  box-sizing: border-box;
+  background-color: #212437;
+  font-family: 'Roboto Mono', monospace;
+  color: #cacaca;
+  font-size: 1.1em;
+  font-weight: 400;
+  text-align: left;
+}
+body::-webkit-scrollbar {
+  width: 0;
+}
+.img-circle {
+  height: 40px;
+}
+.img-circle2 {
+  height: 20px;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+}
+/********** header **********/
+header [class*='col-'] {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+header.row {
+  height: 60px;
+  background-color: #353058;
+}
+header.row button {
+  background: none;
+  border: none;
+}
+.header-search {
+  border-left: 2px solid #292945;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.header-search input {
+  color: #666;
+  border-radius: 50px;
+  background-color: #353058;
+  border: 1px solid 2px solid #292945;
+  padding-left: 5px;
+}
+.header-search li {
+  display: inline-block;
+}
+.ul-header-social {
+  cursor: default;
+}
+/********** header for mobile **********/
+.header2 {
+  display: none;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .header2 {
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.header2 button {
+  background: none;
+  border: none;
+}
+/********** leftside menu **********/
+/********** leftside menu **********/
+.leftside-menu {
+  padding-top: 20px;
+  background-color: #2B2A49;
+  border-top: 2px solid #292945;
+}
+.leftside-menu h3 {
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 2em;
+}
+.leftside-menu h3:hover {
+  color: #6e51e3;
+}
+@media (max-width: 767px) {
+  .leftside-menu {
+    display: none;
+    position: absolute;
+    z-index: 10;
+  }
+}
+@media (min-width: 768px) {
+  .leftside-menu {
+    display: block;
+    position: relative;
+  }
+}
+#menu {
+  margin: 20px 0;
+}
+#menu li {
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+#menu li:hover {
+  color: #6e51e3;
+}
+#menu div {
+  height: 20px;
+  width: 20px;
+  margin: 0 10px;
+  text-align: center;
+}
+.indicators {
+  margin-top: 20px;
+}
+.indicators li {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: baseline;
+      align-items: baseline;
+}
+.indicators div {
+  height: 10px;
+  width: 10px;
+  margin: 0 10px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #9897A7;
+}
+div.indicator-2 {
+  background-color: #8A17AA;
+}
+div.indicator-3 {
+  background-color: #42902D;
+}
+div.indicator-4 {
+  background-color: #987C29;
+}
+div.indicator-5 {
+  background-color: #1B75A7;
+}
+/********** News and Timeline feed **********/
+/********** News and Timeline feed **********/
+.main-feed {
+  padding: 20px 15px;
+  padding-left: 0;
+  padding-right: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  overflow-y: auto;
+}
+.main-feed li {
+  display: block;
+}
+.main-feed::-webkit-scrollbar {
+  width: 5px;
+}
+.main-feed::-webkit-scrollbar-thumb {
+  background-color: #B53AE4;
+}
+.news-body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 10px 0;
+}
+.news-body img {
+  margin-right: 10px;
+}
+.news-footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.panel {
+  background-color: #2C2B4A;
+}
+.panel-footer {
+  background-color: #3b3965;
+  border-top: none;
+}
+.main-feed_title {
+  margin-bottom: 10px;
+}
+.new-post input {
+  height: 20px;
+  padding-left: 5px;
+  border: none;
+  border-radius: 50px;
+  background-color: #37335a;
+}
+.new-post .btn {
+  border-radius: 50%;
+  background-color: #32324C;
+}
+.new-post .btn:hover {
+  color: #fff;
+}
+.new-post .btn:focus {
+  color: #fff;
+  outline: none;
+}
+.chart .panel-body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.chart .panel-body .quantity {
+  font-size: 3em;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.chart .panel-body .img-chart {
+  height: 50px;
+}
+/* //texts
+Prefered format for domain name: first name hyphen last name or last name first name (without hyphen)?
+i.e. john-smith.com
+i.e. smithjohn.com
+9832 Votes | Final results
+
+Dennis Sevryukov shared a link.
+Mobile payments product design case study. 
+
+Mobile payments case study
+Build better mobile payment experiences as a product designer.
+*/
+/* filter checkboxes */
+.filter ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.filter li {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.filter li label {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: #FFF;
+  background-color: #b6c0c1;
+}
+.filter li label:hover {
+  cursor: pointer;
+}
+.filter [type="checkbox"] {
+  position: absolute;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  display: none;
+}
+#circle-home:checked + label {
+  background-color: #1baf5d;
+}
+#circle-user:checked + label {
+  background-color: #e44a4a;
+}
+#circle-book:checked + label {
+  background-color: #5bb6da;
+}
+#circle-music:checked + label {
+  background-color: #f19e1f;
+}
+#circle-bus:checked + label {
+  background-color: #88499c;
+  background-image: url(../assets/images/user photo.jpg);
+  z-index: 10;
+}
+/********** Rightside menu **********/
+.progress-bar1 {
+  position: relative;
+  height: 200px;
+  width: 200px;
+}
+.progress-bar1 div {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+.progress-bar1 div span {
+  position: absolute;
+  font-size: 28px;
+  line-height: 186px;
+  height: 185px;
+  width: 185px;
+  left: 7.5px;
+  top: 7.5px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #2b294a;
+}
+.progress-bar1 .background {
+  background-color: #000;
+}
+.progress-bar1 .rotate {
+  clip: rect(0 100px 200px 0);
+  background-color: #b6c0c1;
+}
+.progress-bar1 .left {
+  clip: rect(0 100px 200px 0);
+  opacity: 1;
+  background-color: #000;
+}
+.progress-bar1 .right {
+  clip: rect(0 100px 200px 0);
+  transform: rotate(180deg);
+  opacity: 0;
+  background-color: #b6c0c1;
+}
+@keyframes toggle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/********** Rightside menu **********/
+.rightside-menu {
+  background-color: #2B2A49;
+  border-top: 2px solid #292945;
+  padding: 0;
+  overflow: hidden;
+}
+.rightside-menu article {
+  width: 100%;
+}
+.rightside-menu header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  font-size: 1.2em;
+}
+.rightside-menu-part {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 5%;
+  border-bottom: 2px solid #292945;
+}
+.rightside-menu-part-1 {
+  height: 32%;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.rightside-menu-part-2 {
+  height: 20%;
+}
+.rightside-menu-part-3 {
+  height: 30%;
+}
+.rightside-menu-part-4 {
+  border-bottom: none;
+  height: 18%;
+}
+.article-body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 10px 0;
+}
+.article-body img {
+  margin-right: 10px;
+}
+.rectangle {
+  height: 40px;
+  width: 40px;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+.rightside-menu-progress {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}

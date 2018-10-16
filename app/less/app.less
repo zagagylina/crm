@@ -1,0 +1,90 @@
+@import "reset";
+@import "variables";
+
+body {
+  box-sizing: border-box;
+  background-color: @bodyBgColor;
+  font-family: 'Roboto Mono', monospace;
+  color: @fontColor;
+  font-size: 1.1em;
+  font-weight: 400;
+  text-align: left;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
+// body::-webkit-scrollbar {
+//   width: 0;
+// }
+
+.img-circle {
+  height: 40px;
+  &2{
+    height: 20px;
+  }
+}
+.row {
+  display: flex;
+}
+
+/********** header **********/
+header [class*='col-'] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header.row {
+  height: 60px;
+  background-color:  @headerBgColor;
+  button{
+    background: none;
+    border: none;
+  }
+}
+.header-search {
+  border-left: @border;
+  justify-content: space-between;
+  input{
+    color: #666;
+    border-radius: 50px;
+    background-color: @headerBgColor;
+    border: 1px solid @border;
+    padding-left: 5px;
+  }
+  li {
+    display: inline-block;
+  }
+}
+.ul-header-social{
+  cursor: default;
+}
+/********** header for mobile **********/
+.header2{
+  display: none;
+  @media (max-width: 768px) {
+    display: flex;
+  }
+  align-items: center;
+  justify-content: space-between;
+  button{
+    background: none;
+    border: none;
+  }
+}
+// #header2-menu-btn, #header-menu-btn{
+//   background: none;
+//   border: none;
+// }
+
+
+
+/********** leftside menu **********/
+@import "leftside-menu";
+
+/********** News and Timeline feed **********/
+@import "main-feed";
+/********** Rightside menu **********/
+@import "rightside-menu";
+
+
+

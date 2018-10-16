@@ -1,0 +1,21 @@
+{
+  "name": "less",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "zagagylina <zagagylina@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jqueryui": "^1.11.1"
+  }
+}

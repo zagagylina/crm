@@ -1,0 +1,154 @@
+@import "variables";
+/********** News and Timeline feed **********/
+.main-feed{
+	padding: 20px 15px;
+	padding-left: 0;
+    padding-right: 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	overflow-y: auto;
+	li{
+		display: block;
+	}
+	&::-webkit-scrollbar {
+	    width: 5px;
+	}
+	&::-webkit-scrollbar-thumb {
+	  background-color: #B53AE4;
+	}
+}
+// .main-feed::-webkit-scrollbar {
+//     width: 5px;
+// }
+// .main-feed::-webkit-scrollbar-thumb {
+//   background-color: #B53AE4;
+// }
+
+.news-body{
+	display: flex;
+	align-items: center;
+	padding: 10px 0;
+	& img{
+    	margin-right: 10px;
+    }
+}
+.news-footer{
+	display: flex;
+	justify-content: space-between;
+}
+.panel{
+	background-color: @panelBgColor;
+}
+.panel-footer{
+	background-color: @panelBgColorBright;
+	border-top: none;
+}
+
+.main-feed_title{
+	margin-bottom: 10px;
+}
+
+.new-post{
+	input{
+		height: 20px;
+		padding-left: 5px;
+		border: none;
+	    border-radius: 50px;
+	    background-color: #37335a;
+	}
+	.btn{
+		border-radius: 50%;
+		background-color: #32324C;
+		&:hover{
+			color: #fff;
+		}
+		&:focus{
+			color: #fff;
+			outline: none;
+		}
+	}
+}
+
+.chart{
+	.panel-body{
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
+		.quantity{
+			font-size: 3em;
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+		.img-chart{
+			height: 50px;
+		}
+	}
+	
+}
+/* //texts
+Prefered format for domain name: first name hyphen last name or last name first name (without hyphen)?
+i.e. john-smith.com
+i.e. smithjohn.com
+9832 Votes | Final results
+
+Dennis Sevryukov shared a link.
+Mobile payments product design case study. 
+
+Mobile payments case study
+Build better mobile payment experiences as a product designer.
+*/
+
+/* filter checkboxes */
+.filter {
+	ul{
+		display: flex;
+		justify-content: space-around;
+	}
+	li{
+		display: flex;
+		align-items: center;
+		label{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 40px;
+		    width: 40px;
+			border-radius: 50%;
+			color: #FFF;
+			background-color: #b6c0c1;
+			&:hover{
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+
+
+
+.filter [type="checkbox"]{
+	position: absolute;
+	height: 0;
+	width: 0;
+	overflow: hidden;
+	display: none;
+}
+#circle-home:checked + label{
+	background-color: #1baf5d;
+}
+#circle-user:checked + label{
+	background-color: #e44a4a;
+}
+#circle-book:checked + label{
+	background-color: #5bb6da;
+}
+#circle-music:checked + label{
+	background-color: #f19e1f;
+}
+#circle-bus:checked + label{
+	background-color: #88499c;
+	background-image: url(../assets/images/user photo.jpg);
+	z-index: 10;
+}

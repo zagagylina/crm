@@ -1,0 +1,66 @@
+@import "variables";
+@import "progress-bar";
+/********** Rightside menu **********/
+.rightside-menu {
+	background-color:  @sideBgColor;
+	border-top: @border;
+	padding: 0;
+	overflow: hidden;
+	article {
+		width: 100%;
+	}
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 1.2em;
+	}
+}
+
+.rightside-menu-part{
+	display: flex;
+	padding: 10px 5%;
+	border-bottom: @border;
+
+	&-1{
+		height: 32%;
+		flex-flow: column nowrap;
+	    justify-content: space-around;
+	}
+	&-2{
+		height: 20%;
+	}
+	&-3{
+		height: 30%;
+	}
+	&-4{
+		border-bottom: none;
+		height: 18%;
+	}
+}
+
+.article-body{
+	display: flex;
+	align-items: center;
+	padding: 10px 0;
+	& img{
+    	margin-right: 10px;
+    }
+}
+
+
+.rectangle{
+	height: 40px;
+	width: 40px;
+	padding: 0 5px;
+	border-radius: 5px;
+}
+
+.rightside-menu-progress{
+	display: flex;
+	justify-content: center;
+}
+
+
+
+

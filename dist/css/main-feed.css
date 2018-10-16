@@ -1,0 +1,149 @@
+/********** News and Timeline feed **********/
+.main-feed {
+  padding: 20px 15px;
+  padding-left: 0;
+  padding-right: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  overflow-y: auto;
+}
+.main-feed li {
+  display: block;
+}
+.main-feed::-webkit-scrollbar {
+  width: 5px;
+}
+.main-feed::-webkit-scrollbar-thumb {
+  background-color: #B53AE4;
+}
+.news-body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 10px 0;
+}
+.news-body img {
+  margin-right: 10px;
+}
+.news-footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.panel {
+  background-color: #2C2B4A;
+}
+.panel-footer {
+  background-color: #3b3965;
+  border-top: none;
+}
+.main-feed_title {
+  margin-bottom: 10px;
+}
+.new-post input {
+  height: 20px;
+  padding-left: 5px;
+  border: none;
+  border-radius: 50px;
+  background-color: #37335a;
+}
+.new-post .btn {
+  border-radius: 50%;
+  background-color: #32324C;
+}
+.new-post .btn:hover {
+  color: #fff;
+}
+.new-post .btn:focus {
+  color: #fff;
+  outline: none;
+}
+.chart .panel-body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.chart .panel-body .quantity {
+  font-size: 3em;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.chart .panel-body .img-chart {
+  height: 50px;
+}
+/* //texts
+Prefered format for domain name: first name hyphen last name or last name first name (without hyphen)?
+i.e. john-smith.com
+i.e. smithjohn.com
+9832 Votes | Final results
+
+Dennis Sevryukov shared a link.
+Mobile payments product design case study. 
+
+Mobile payments case study
+Build better mobile payment experiences as a product designer.
+*/
+/* filter checkboxes */
+.filter ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.filter li {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.filter li label {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: #FFF;
+  background-color: #b6c0c1;
+}
+.filter li label:hover {
+  cursor: pointer;
+}
+.filter [type="checkbox"] {
+  position: absolute;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  display: none;
+}
+#circle-home:checked + label {
+  background-color: #1baf5d;
+}
+#circle-user:checked + label {
+  background-color: #e44a4a;
+}
+#circle-book:checked + label {
+  background-color: #5bb6da;
+}
+#circle-music:checked + label {
+  background-color: #f19e1f;
+}
+#circle-bus:checked + label {
+  background-color: #88499c;
+  background-image: url(../assets/images/user photo.jpg);
+  z-index: 10;
+}

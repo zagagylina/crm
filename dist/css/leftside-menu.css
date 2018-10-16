@@ -1,0 +1,73 @@
+/********** leftside menu **********/
+.leftside-menu {
+  padding-top: 20px;
+  background-color: #2B2A49;
+  border-top: 2px solid #292945;
+}
+.leftside-menu h3 {
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 2em;
+}
+.leftside-menu h3:hover {
+  color: #6e51e3;
+}
+@media (max-width: 767px) {
+  .leftside-menu {
+    display: none;
+    position: absolute;
+    z-index: 10;
+  }
+}
+@media (min-width: 768px) {
+  .leftside-menu {
+    display: block;
+    position: relative;
+  }
+}
+#menu {
+  margin: 20px 0;
+}
+#menu li {
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+#menu li:hover {
+  color: #6e51e3;
+}
+#menu div {
+  height: 20px;
+  width: 20px;
+  margin: 0 10px;
+  text-align: center;
+}
+.indicators {
+  margin-top: 20px;
+}
+.indicators li {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: baseline;
+      align-items: baseline;
+}
+.indicators div {
+  height: 10px;
+  width: 10px;
+  margin: 0 10px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #9897A7;
+}
+div.indicator-2 {
+  background-color: #8A17AA;
+}
+div.indicator-3 {
+  background-color: #42902D;
+}
+div.indicator-4 {
+  background-color: #987C29;
+}
+div.indicator-5 {
+  background-color: #1B75A7;
+}
