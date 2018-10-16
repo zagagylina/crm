@@ -17,7 +17,6 @@ var destination = './dist/';
 var app = './app/';
 var path = {
     copy: [
-        app + 'index.html',
         app + 'assets/**/*.*'
     ],
     watch: [
@@ -66,6 +65,8 @@ gulp.task('vendorFonts', function(){
 gulp.task('copy', function() {
     gulp.src(path.copy, {base: app})
         .pipe(gulp.dest(destination));
+    gulp.src('./app/index.html', {base: app})
+        .pipe(gulp.dest('./'));
 });
 gulp.task('js', function(){
 	gulp.src(app + 'js/**/*.js')
